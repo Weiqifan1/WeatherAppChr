@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.Toolbar
+import android.widget.TextView
 import com.example.weatherapp.R
 import com.example.weatherapp.domain.commands.RequestForecastCommand
 import com.example.weatherapp.ui.adapters.ForecastListAdapter
@@ -16,6 +17,17 @@ import org.jetbrains.anko.uiThread
 class MainActivity : AppCompatActivity(), ToolbarManager {
     override val toolbar by lazy { find<Toolbar>(R.id.toolbar)}
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        //opg 1: vis noget text på skærmen:
+
+        TextView eksempelTekst;
+        //eksempelTekst = (TextView) findviewById()
+
+    }
+
+    /*
+    //oprindelig kode: 2019-04-09 2019
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,4 +47,6 @@ class MainActivity : AppCompatActivity(), ToolbarManager {
         }
 
     }
+    */
+
 }
